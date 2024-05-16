@@ -210,16 +210,12 @@ document.addEventListener('scroll', throttle(handleScroll, 100));
 
 
 
-document.addEventListener('DOMContentLoaded', async () => {
-  const response = await fetch('/api/spotify');
-  const data = await response.json();
-
-  if (data && data.item) {
-    const trackInfo = `
-            Currently playing: ${data.item.name} by ${data.item.artists.map(artist => artist.name).join(', ')}
-        `;
-    document.getElementById('track-info').innerText = trackInfo;
-  } else {
-    document.getElementById('track-info').innerText = 'No track currently playing.';
-  }
+// index.js
+document.addEventListener('DOMContentLoaded', function () {
+  fetch('/api/spotify')
+    .then(response => response.json())
+    .then(data => {
+      console.log('Currently playing:', data.track, 'by', data.artist);
+    })
+    .catch(error => console.error('Error fetching data:', error));
 });
