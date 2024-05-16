@@ -19,7 +19,8 @@ module.exports = async (req, res) => {
       return response.data.access_token;
     } catch (error) {
       console.error('Error getting access token:', error.response ? error.response.data : error.message);
-      throw new Error('Failed to get access token');
+      res.status(500).json({ error: 'Failed to get access token', details: error.response ? error.response.data : error.message });
+      throw error; // Re-throw after logging
     }
   };
 
@@ -33,7 +34,8 @@ module.exports = async (req, res) => {
       return response.data;
     } catch (error) {
       console.error('Error getting currently playing track:', error.response ? error.response.data : error.message);
-      throw new Error('Failed to get currently playing track');
+      res.status(500).json({ error: 'Failed to get currently playing track', details: error.response ? error.response.data : error.message });
+      throw error; // Re-throw after logging
     }
   };
 
@@ -43,6 +45,6 @@ module.exports = async (req, res) => {
     res.status(200).json(trackInfo);
   } catch (error) {
     console.error('Server error:', error.message);
-    res.status(500).json({ error: 'Internal Server Error' });
+    res.status(500).json({ error: 'Internal Server Error', details: error.message });
   }
 };
