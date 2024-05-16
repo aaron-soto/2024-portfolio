@@ -211,11 +211,11 @@ document.addEventListener('scroll', throttle(handleScroll, 100));
 
 
 // index.js
-document.addEventListener('DOMContentLoaded', function () {
-  fetch('/api/spotify')
-    .then(response => response.json())
-    .then(data => {
-      console.log('Currently playing:', data.track, 'by', data.artist);
-    })
-    .catch(error => console.error('Error fetching data:', error));
-});
+// document.addEventListener('DOMContentLoaded', function () {
+//   fetch('/api/spotify')
+//     .then(response => response.json())
+//     .then(data => {
+//       console.log('Currently playing:', data.track, 'by', data.artist);
+//     })
+//     .catch(error => console.error('Error fetching data:', error));
+// });
