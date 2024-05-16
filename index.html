@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aaron Soto | Web Developer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+    rel="stylesheet" />
+
+  <!-- Font Aweosme -->
+  <script src="https://kit.fontawesome.com/8a05dd154b.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <nav id="top-nav">
+  <ul>
+    <li class="active" data-target="home-section">Home</li>
+    <li data-target="about-section">About</li>
+    <li data-target="work-section">Work</li>
+    <li data-target="say-hi-section">Chat</li>
+  </ul>
+</nav>
+
+  <div class="settings">
+    <i class="fa-solid fa-gear"></i>
+  </div>
+
+  <button id="resume-btn">Download Resume <i class="fa-solid fa-download"></i></button>
+
+  <div id="canvas-overlay"></div>
+  <canvas id="hero-canvas"></canvas>
+
+  <div class="container">
+    <section class="hero-section" id="home-section">
+      <h1>Hi, I'm Aaron Soto</h1>
+      <p>
+        I'm a web developer based in <span class="desert-effect">Arizona</span>. I specialize in creating fun,
+        responsive, and accessible websites.
+      </p>
+    </section>
+
+    <section id="about-section">
+      <h2 class="section-title">About</h2>
+      <p>
+        I am a web developer living in Arizona. I discovered my passion for
+        devloping after getting out of the military where I was a sergant in
+        the 75th Ranger Regiment. There is nothing I love more than the
+        creative challenges that devloping websites brings. I am always
+        building new projects and learning new technologies to learn new
+        skills and implement them first hand.
+      </p>
+
+      <span id="read-more">read more ...</span>
+
+      <p id="extended-about" class="hidden">
+        This is the extended version where I will write even more about myself that the user can read further into who I
+        am!
+      </p>
+    </section>
+
+    <section>
+      <h2 class="section-title">Skillset</h2>
+      <p>My skill set is alwasy evolving since my freetime I am usually learning some new tech by building a side
+        project</p>
+      <div class="skills">
+        <span>Angular</span>
+        <span>C#</span>
+        <span>JavaScript</span>
+        <span>TypeScript</span>
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>SCSS</span>
+        <span>Node.js</span>
+        <span>Express</span>
+        <span>MongoDB</span>
+        <span>SQL</span>
+        <span>Git</span>
+        <span>Tailwind</span>
+        <span>Firebase</span>
+        <span>Jira</span>
+        <span>AWS</span>
+        <span>Azure Services</span>
+      </div>
+    </section>
+
+    <section id="work-section">
+      <h2 class="section-title">Experience</h2>
+      <div class="experience">
+        <div class="date">March 2021 - May 2024</div>
+        <div class="description">
+          <span>Allata
+            <a href="https://allata.com"><i class="fa-solid fa-link"></i></a></span>
+          <h3>Senior Developer Consultant</h3>
+          <p>
+            Implemented Azure AD SSO to enhance user authentication across
+            systems, improving security and user experience. Upgraded Node.js
+            API for REST standards, increasing reliability and scalability.
+            Led .NET/MySQL app optimization using AWS services, improving
+            feature deployment with Lambda events and feature flags. Developed
+            Angular components, enhancing UI/UX with custom data tables and
+            forms. Overhauled front-end code for reusability and consistency,
+            reducing redundancy.
+          </p>
+          <div class="skills">
+            <span>Angular</span>
+            <span>C#</span>
+            <span>TypeScript</span>
+            <span>Express</span>
+            <span>SQL</span>
+            <span>Git</span>
+            <span>Jira</span>
+            <span>AWS</span>
+            <span>Azure Services</span>
+          </div>
+        </div>
+      </div>
+      <div class="experience">
+        <div class="date">March 2023 - Current</div>
+        <div class="description">
+          <span>AyeZeeWebDesigns
+            <a href="https://ayezeewebdesigns.com"><i class="fa-solid fa-link"></i></a></span>
+          <h3>Freelance Web Developer</h3>
+          <p>
+            Collaborated with businesses to design and implement functional,
+            visually appealing websites that align with client objectives (
+            <a href="https://casestudyphoenix.com">Case Study</a>,
+            <a href="shipleyevents.com">Shipley Events</a> ). Developed a
+            custom CMS using Node.js and Angular for effective content
+            management via a RESTful API. Built a user authentication system
+            from scratch, enhancing security and user management for client
+            applications.
+          </p>
+          <div class="skills">
+            <span>Angular</span>
+            <span>JavaScript</span>
+            <span>TypeScript</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>SCSS</span>
+            <span>Node.js</span>
+            <span>Express</span>
+            <span>MongoDB</span>
+            <span>Firebase</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2 class="section-title">Projects</h2>
+      <div class="projects">
+        <div class="project">
+          <div class="links">
+            <a href="!#"><i class="fa-brands fa-github"></i></a>
+            <a href="!#"><i class="fa-solid fa-link"></i></a>
+          </div>
+          <h3>Repo Purge</h3>
+          <div class="tags">
+            <span>Angular</span>
+            <span>Node.js</span>
+            <span>Express</span>
+            <span>MongoDB</span>
+          </div>
+        </div>
+        <div class="project">
+          <div class="links">
+            <a href="!#"><i class="fa-brands fa-github"></i></a>
+            <a href="!#"><i class="fa-solid fa-link"></i></a>
+          </div>
+          <h3>Cornhole Scorer</h3>
+          <div class="tags">
+            <span>Angular</span>
+            <span>Node.js</span>
+            <span>Express</span>
+            <span>MongoDB</span>
+          </div>
+        </div>
+        <div class="project">
+          <div class="links">
+            <a href="!#"><i class="fa-brands fa-github"></i></a>
+            <a href="!#"><i class="fa-solid fa-link"></i></a>
+          </div>
+          <h3>Js Confetti</h3>
+          <div class="tags">
+            <span>Angular</span>
+            <span>Node.js</span>
+            <span>Express</span>
+            <span>MongoDB</span>
+          </div>
+        </div>
+        <div class="project">
+          <div class="links">
+            <a href="!#"><i class="fa-brands fa-github"></i></a>
+            <a href="!#"><i class="fa-solid fa-link"></i></a>
+          </div>
+          <h3>Web Terminal App</h3>
+          <div class="tags">
+            <span>Angular</span>
+            <span>Node.js</span>
+            <span>Express</span>
+            <span>MongoDB</span>
+          </div>
+        </div>
+    </section>
+
+    <!-- <section>
+      <h2 class="section-title">Code Goodies</h2>
+      <p>If you have made it this far in my website then enjoy some of these fun goodies I have created on my freetime and you are welcome to use them anywhere in any of your projects!</p>
+    </section> -->
+
+    <section>
+      <h2 class="section-title">
+        What I am Listening To
+      </h2>
+      <p>This is where I will keep my Top songs as well as my most recent listened to song or even what I am listening to at any exact moment.</p>
+
+      <p id="track-info">Loading...</p>
+    </section>
+
+
+    <section id="say-hi-section">
+      <h2 class="section-title">Say hi.</h2>
+      <p class="email"><a href="mailto:me@aaronsoto.io">me@aaronsoto.io</a></p>
+      <div class="short-divider"></div>
+      <p>I love to design and code fun experiences that users actually enjoy using. <a href="!#">Say hi!</a></p>
+      <p>Aaron Soto</p>
+      <p>Phoenix, Arizona</p>
+    </section>
+
+    <section>
+      <h2>Current Work Status</h2>
+
+      <div class="job-status">
+        <span class="pulsing-indicator is-pulsing"></span>
+        <h4>Currently Open to Work</h4>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2021 Aaron Soto</p>
+
+      <div class="socials">
+        <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href=""><i class="fa-solid fa-envelope"></i></a>
+        <a href=""><i class="fa-brands fa-github"></i></a>
+      </div>
+    </footer>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
