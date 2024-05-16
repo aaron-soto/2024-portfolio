@@ -195,6 +195,15 @@ section p a {
   background-color: #252424;
 }
 
+@media (max-width: 768px) {
+  .skills {
+    span {
+      padding: 0.25rem 0.5rem;
+      font-size: 0.7rem;
+    }
+  }
+}
+
 .experience {
   display: grid;
   grid-template-columns: 1fr 4fr;
@@ -231,6 +240,12 @@ section p a {
         text-decoration: none;
       }
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .experience {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -318,6 +333,12 @@ footer {
   }
 }
 
+@media (max-width: 768px) {
+  .projects {
+    grid-template-columns: 1fr;
+  }
+}
+
 .desert-effect {
   background: linear-gradient(
     45deg,
@@ -380,6 +401,23 @@ footer {
   cursor: pointer;
   border: none;
   z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  #resume-btn {
+    display: none;
+  }
+}
+
+#resume-btn:hover {
+  color: #eee48a;
+  background-color: #25242480;
 }
 
 #read-more {
