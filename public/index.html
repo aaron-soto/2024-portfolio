@@ -20,19 +20,20 @@
 
 <body>
   <nav id="top-nav">
-  <ul>
-    <li class="active" data-target="home-section">Home</li>
-    <li data-target="about-section">About</li>
-    <li data-target="work-section">Work</li>
-    <li data-target="say-hi-section">Chat</li>
-  </ul>
-</nav>
+    <ul>
+      <li class="active" data-target="home-section">Home</li>
+      <li data-target="about-section">About</li>
+      <li data-target="work-section">Work</li>
+      <li data-target="say-hi-section">Chat</li>
+    </ul>
+  </nav>
 
   <!-- <div class="settings">
     <i class="fa-solid fa-gear"></i>
   </div> -->
 
-  <a id="resume-btn" href="./data/Aaron-Soto-2024.pdf" download="aaron-soto-resume">Download Resume <i class="fa-solid fa-download"></i></a>
+  <a id="resume-btn" href="./data/Aaron-Soto-2024.pdf" download="aaron-soto-resume">Download Resume <i
+      class="fa-solid fa-download"></i></a>
 
   <div id="canvas-overlay"></div>
   <canvas id="hero-canvas"></canvas>
@@ -49,26 +50,48 @@
     <section id="about-section">
       <h2 class="section-title">About</h2>
       <p>
-        I am a web developer living in Arizona. I discovered my passion for
-        devloping after getting out of the military where I was a sergant in
-        the 75th Ranger Regiment. There is nothing I love more than the
-        creative challenges that devloping websites brings. I am always
-        building new projects and learning new technologies to learn new
-        skills and implement them first hand.
+        I am a web developer based in Arizona with a passion for creating innovative web solutions. After serving as a
+        sergeant in the 75th Ranger Regiment, I transitioned to web development, finding excitement in the creative
+        challenges it offers. I specialize in technologies like Angular, C#/.NET, JavaScript, and AWS, constantly
+        building new projects and learning the latest advancements to enhance my skills.
+      </p>
+      <p>
+        I am dedicated to delivering high-quality, scalable web applications and am always eager to tackle new
+        challenges. Please explore my portfolio to see my work, and feel free to reach out if you have any opportunities
+        or questions.
       </p>
 
       <span id="read-more">read more ...</span>
 
-      <p id="extended-about" class="hidden">
-        This is the extended version where I will write even more about myself that the user can read further into who I
-        am!
-      </p>
+      <div id="extended-about" class="hidden">
+        <p>
+          I was born and raised in Casa Grande, Arizona. After graduating high school, I joined the military and became
+          an Army Ranger, serving as a sergeant in the 75th Ranger Regiment. This role allowed me to travel the world,
+          participate in the D-Day reenactment in Normandy, France, and earn my HALO (High Altitude Low Opening)
+          military skydiving license, which led to my civilian skydiving license.</p>
+        <p>
+          Upon leaving the military, I worked in Arizona building RVs and Toy Haulers. While I enjoyed this job, I
+          aspired to do something bigger. I began teaching myself programming and, once confident in my skills, enrolled
+          in the Coding Dojo bootcamp to further my education in software development.
+        </p>
+        <p>
+          After completing the bootcamp, I quickly secured a position with a consulting company, working on various
+          projects from simple Node.js servers to large-scale applications utilizing AWS and multiple repositories.
+          During this time, I also started my own side business, AyeZeeWebDesigns, creating websites for local
+          businesses.
+        </p>
+        <p>
+
+          In my free time, I love building things, whether it's crafting wood furniture, using my 3D printer, or
+          operating my CNC machine. I'm always working on something new. Additionally, I am constantly learning new
+          technologies to incorporate into my projects.
+        </p>
+      </div>
     </section>
 
     <section>
       <h2 class="section-title">Skillset</h2>
-      <p>My skill set is alwasy evolving since my freetime I am usually learning some new tech by building a side
-        project</p>
+      <p>My skill set is always evolving as I spend my free time learning new technologies through side projects.</p>
       <div class="skills">
         <span>Angular</span>
         <span>C#</span>
@@ -157,10 +180,15 @@
       <div class="projects">
         <div class="project">
           <div class="links">
-            <a href="!#"><i class="fa-brands fa-github"></i></a>
-            <a href="!#"><i class="fa-solid fa-link"></i></a>
+            <a href="https://github.com/aaron-soto/angular-tower-defense" target="_blank"><i
+                class="fa-brands fa-github"></i></a>
+            <a href="https://angular-tower-defense.vercel.app/" target="_blank"><i class="fa-solid fa-link"></i></a>
           </div>
-          <h3>Repo Purge</h3>
+          <h3>Angular Tower Defense</h3>
+          <p>Explore this Angular Tower Defense game, a highlight of my developer portfolio. It features advanced A*
+            pathfinding and dynamic tower systems, demonstrating my Angular and responsive design skills. This project
+            merges strategic gameplay with robust technical execution, showcasing development prowess and engaging
+            interaction.</p>
           <div class="tags">
             <span>Angular</span>
             <span>Node.js</span>
@@ -170,10 +198,13 @@
         </div>
         <div class="project">
           <div class="links">
-            <a href="!#"><i class="fa-brands fa-github"></i></a>
-            <a href="!#"><i class="fa-solid fa-link"></i></a>
+            <a href="https://github.com/aaron-soto/cornhole-scorer" target="_blank"><i
+                class="fa-brands fa-github"></i></a>
+            <a href="https://aaron-soto.github.io/cornhole-scorer/" target="_blank"><i class="fa-solid fa-link"></i></a>
           </div>
           <h3>Cornhole Scorer</h3>
+          <p>This app was created to solve a personal problem that my family and friends have alot. Cornhole score
+            keeping can get very difficult at parties. This app make it easy and fun!</p>
           <div class="tags">
             <span>Angular</span>
             <span>Node.js</span>
@@ -183,10 +214,12 @@
         </div>
         <div class="project">
           <div class="links">
-            <a href="!#"><i class="fa-brands fa-github"></i></a>
-            <a href="!#"><i class="fa-solid fa-link"></i></a>
+            <a href="https://github.com/aaron-soto/js-confetti" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://aaron-soto.github.io/js-confetti/" target="_blank"><i class="fa-solid fa-link"></i></a>
           </div>
           <h3>Js Confetti</h3>
+          <p>This project is a confetti effect made with a transparent canvas element that can be place over a webpage
+            to simulate confetti falling.</p>
           <div class="tags">
             <span>Angular</span>
             <span>Node.js</span>
@@ -196,10 +229,14 @@
         </div>
         <div class="project">
           <div class="links">
-            <a href="!#"><i class="fa-brands fa-github"></i></a>
-            <a href="!#"><i class="fa-solid fa-link"></i></a>
+            <a href="#!"><i class="fa-brands fa-github"></i></a>
+            <a href="#!"><i class="fa-solid fa-link"></i></a>
           </div>
           <h3>Web Terminal App</h3>
+          <p>A dynamic Angular-based web terminal simulator that replicates traditional terminal operations without
+            executing real commands. Features include user authentication simulation, theme switching, and example data
+            fetch commands. Designed to demonstrate Angular's capabilities while providing an interactive and visually
+            appealing user experience.</p>
           <div class="tags">
             <span>Angular</span>
             <span>Node.js</span>
@@ -229,7 +266,7 @@
       <p class="email"><a href="mailto:me@aaronsoto.io">me@aaronsoto.io</a></p>
       <div class="short-divider"></div>
       <p>I love to design and code fun experiences that users actually enjoy using. <a href="!#">Say hi!</a></p>
-      <p>Aaron Soto</p>
+      <p class="signature">Aaron Soto</p>
       <p>Phoenix, Arizona</p>
     </section>
 
