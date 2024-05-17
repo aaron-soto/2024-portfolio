@@ -1,0 +1,12 @@
+# robots.txt
+
+# Allow all
+User-agent: *
+Disallow:
+
+# Disallow specific folders
+Disallow: /private/
+Disallow: /temp/
+
+# Sitemap location
+Sitemap: https://www.aaronsoto.io/sitemap.xml
