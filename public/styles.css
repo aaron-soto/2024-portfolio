@@ -194,6 +194,29 @@ section p a {
   }
 }
 
+.download-btn {
+  background-color: #282828;
+  padding: 0.7rem 1.5rem;
+  border-radius: var(--border-radius);
+  color: #ffffff;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-top: 1.5rem;
+}
+
+.download-btn:hover {
+  color: #eee48a;
+}
+
+@media (max-width: 768px) {
+  .download-btn {
+    width: 100%;
+    height: 55px;
+  }
+}
+
 .experience {
   display: grid;
   grid-template-columns: 1fr 4fr;
