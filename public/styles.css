@@ -195,7 +195,8 @@ section p a {
 }
 
 .download-btn {
-  background-color: #282828;
+  background: rgba(28, 28, 28, 0.19);
+  border: 1px solid #4f4f4f75;
   padding: 0.7rem 1.5rem;
   border-radius: var(--border-radius);
   color: #ffffff;
